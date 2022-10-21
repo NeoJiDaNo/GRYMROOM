@@ -4,21 +4,21 @@
 h1,h2,h3
     margin: 0
 html
-    font-family: 'Roboto', sans-serif
+    font-family: 'Open Sans', sans-serif
     font-size: 16px
     scroll-behavior: smooth
 a
     text-decoration: none
 
 .container
-    max-width: 1300px
+    max-width: 1200px
     margin: 0 auto
 
-p, h1, h2, h3
+p, h1, h2, h3, div
     color: white
 
 body
-    background-color: black
+    background-color: $main
 
 .popup 
     position: fixed
@@ -39,3 +39,19 @@ body
 .popup-reg
     visibility: inherit
     overflow-y: scroll
+
+.logo
+    max-width: 120px
+
+#btn
+    background-color: $dark
+    padding: 10px 10px
+    border-radius: 5px
+    margin: 0 10px
+    cursor: pointer
+#btnS
+    background-color: $gold
+    padding: 10px 10px
+    border-radius: 5px
+    margin: 0 10px
+    cursor: pointer

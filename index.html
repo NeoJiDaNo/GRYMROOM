@@ -5,11 +5,124 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
     <script src="./dist/main.js" defer></script>
     <title>ГрумRoom</title>
 </head>
+<header class="header">
+    <div class="container">
+        <div class="header-items">
+            <div class="header-items__item">
+                <div class="header-items__item-logo">
+                    <img src="./img/logo.png" alt="logo" class="logo">
+                </div>
+            </div>
+            <div class="header-items__item">
+                <div class="header-items__item-links">
+                    <div class="header-items__item-links-link">
+                        <div class="header-items__item-links-link-text" id="btn">Заявка</div>
+                    </div>
+                    <div class="header-items__item-links-link">
+                        <div class="header-items__item-links-link-text" id="btn">Контакты</div>
+                    </div>
+                    <div class="header-items__item-links-link">
+                        <div class="header-items__item-links-link-text" id="btn">Контакты</div>
+                    </div>
+                    <div class="header-items__item-links-link">
+                        <div class="header-items__item-links-link-text" id="btn">Контакты</div>
+                    </div>
+                </div>
+            </div>
+            <div class="header-items__item">
+                <div class="header-items__item-reg">
+                    <div class="header-items__item-reg-blockLogin">
+                        <div class="header-items__item-reg-btnLogin" id="btn">Вход</div>
+                    </div>
+                    <div class="header-items__item-reg-blockReg">
+                        <div class="header-items__item-reg-btnReg" id="btnS">Регистрация</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
 <body id="body">
-    <div class="callback">
+    <section class="hero">
+        <div class="container">
+            <div class="hero-items">
+                <div class="hero-items__item">
+                    <div class="hero-items__item-info">
+                        <h1 class="hero-items__item-info-head">Грум Room</h1>
+                        <p class="hero-items__item-info-text"> <b> услуги груминга – ухода
+                            за внешним видом животного, его кожей и шерстью, когтями и ушами. </b></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="request">
+        <div class="container">
+            <div class="request-items">
+                <div class="request-items__item">
+                    <div class="request-items__item-header">
+                        <h2 class="request-items__item-header-head">Последние заявки</h2>
+                    </div>
+                </div>
+                <div class="request-items__item">
+                    <div class="request-items__item-grid">
+                        <div class="request-items__item-grid-block">
+                            <img src="./img/animal/got1.jpg" alt="animal" class="request-items__item-grid-block-img">
+                            <h3 class="request-items__item-grid-block-head">Пудел</h3>
+                            <p class="request-items__item-grid-block-text">Стрижка</p>
+                            <p class="request-items__item-grid-block-time">1.1.1111</p>
+                        </div>
+                        <div class="request-items__item-grid-block">
+                            <img src="./img/animal/got1.jpg" alt="animal" class="request-items__item-grid-block-img">
+                            <h3 class="request-items__item-grid-block-head">Пудел</h3>
+                            <p class="request-items__item-grid-block-text">Стрижка</p>
+                            <p class="request-items__item-grid-block-time">1.1.1111</p>
+                        </div>
+                        <div class="request-items__item-grid-block">
+                            <img src="./img/animal/got1.jpg" alt="animal" class="request-items__item-grid-block-img">
+                            <h3 class="request-items__item-grid-block-head">Пудел</h3>
+                            <p class="request-items__item-grid-block-text">Стрижка</p>
+                            <p class="request-items__item-grid-block-time">1.1.1111</p>
+                        </div>
+                        <div class="request-items__item-grid-block">
+                            <img src="./img/animal/got1.jpg" alt="animal" class="request-items__item-grid-block-img">
+                            <h3 class="request-items__item-grid-block-head">Пудел</h3>
+                            <p class="request-items__item-grid-block-text">Стрижка</p>
+                            <p class="request-items__item-grid-block-time">1.1.1111</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="request-items__item-footer">
+                    <h2 class="request-items__item-footer-text">Заявок выполнено: 111</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="invite">
+        <div class="container">
+            <div class="invite-items">
+                <div class="invite-items__item">
+                    <div class="invite-items__item-header">
+                        <h2 class="invite-items__item-header-head">Подача заявок</h2>
+                    </div>
+                </div>
+                <div class="invite-items__item">
+                    <form action="" class="invite-items__item-form">
+                        <input type="text" class="invite-items__item-form-nickname">
+                        <input type="text" class="invite-items__item-form-work">
+                        <input type="file" name="img" class="invite-items__item-form-img">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- <div class="callback">
         <div class="callback-items">
             <div class="callback-items__item">
                 <div class="callback-items__item-window">
@@ -20,7 +133,6 @@
                 <button class="callback-items__item-btn">Отправить</button>
             </div>
         </div>
-    </div>
-    <div class="reg"></div>
+    </div> -->
 </body>
 </html>
