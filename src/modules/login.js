@@ -1,102 +1,118 @@
 const login = () => {
 
-    const div = document.createElement('div')
-    div.classList.add('popup')
-    div.classList.add('popup-reg')
-    const blockDiv = document.createElement('div')
-    const input1 = document.createElement('input')
-    input1.id = 'inputLogin'
-    input1.classList.add('inputLogin')
-    const input2 = document.createElement('input')
-    input2.id = 'inputPass'
-    const btnL = document.createElement('button')
-    btnL.innerText = 'Sign in'
-    btnL.id = 'btnLogin'
-    const btnR = document.createElement('button')
-    btnR.innerText = 'Registration'
-    btnR.id = 'btnReg'
+    const btnMR = document.querySelector('.header-items__item-reg-btnReg')
+    const btnReg = document.querySelector('.popup-registr-items__item__form-btn')
+    const popup = document.querySelector('.popup-registr')
 
-    blockDiv.appendChild(input1)
-    blockDiv.appendChild(input2)
-    blockDiv.appendChild(btnL)  
-    blockDiv.appendChild(btnR)
-    div.appendChild(blockDiv)
-    body.appendChild(div)
+    const inputFN = document.querySelector('#fullName')
+    const inputL = document.querySelector('#login')
+    const inputE = document.querySelector('#email')
+    const inputP = document.querySelector('#pass')
+    const inputPR = document.querySelector('#passr')
+    const checkbox = document.querySelector('#check').checked
 
-    const divR = document.createElement('div')
-    divR.classList.add('popup')
-    const blockDivR = document.createElement('div')
-    const input1R = document.createElement('input')
-    input1R.id = 'inputRLogin'
-    input1R.classList.add('inputLogin')
-    const input2R = document.createElement('input')
-    input2R.id = 'inputRPass'
-    const btnRReg = document.createElement('button')
-    btnRReg.innerText = 'Reg'
-    btnRReg.id = 'btnReg'
-
+    console.log(checkbox);
     
-    blockDivR.appendChild(input1R)
-    blockDivR.appendChild(input2R)
-    blockDivR.appendChild(btnRReg)
-    divR.appendChild(blockDivR)
-    body.appendChild(divR)
-
-    const inputLogin = document.querySelector('#inputLogin')
-    const inputPass = document.querySelector('#inputPass')
-    const btnLogin = document.querySelector('#btnLogin')
+    let id = 1
     let passArr = []
 
     let user = {
+        id: '1',
         login: 'admin',
-        pass: 'admin'
+        pass: 'admin',
+        fullname: 'admin',
+        email: 'admin'
     }
 
     passArr.push(user)
-    console.log(passArr)
 
-    btnR.addEventListener('click', (e) => {
+    document.addEventListener('click', (e) => {
         e.preventDefault()
-        divR.classList.add('popup-reg')
-    })
-
-    btnLogin.addEventListener('click', (e) => {
-        e.preventDefault()
-        if (input1.value !== '' && input2.value !== '') {
-            console.log(passArr);
-            user = {
-                login: input1.value,
-                pass: input2.value
-            }
-            passArr.forEach(elem => {
-                console.log(elem.login);
-              if (elem.login == user.login && elem.pass == user.pass) {
-                  div.classList.remove('popup-reg')
-                  input1.value = ''
-                  input2.value = ''
-              } else {
-                  return
-              }
-            })
+        if (e.target.closest('.header-items__item-reg-blockReg')) {
+            popup.style.visibility = 'inherit'
+        } else if (e.target.contains(popup)) {
+            popup.style.visibility = 'hidden'
+        }
+        if (e.target.closest('.popup-registr-items__item__form-btn')) {
+            getReg()
         }
     })
 
-    btnRReg.addEventListener('click', (e) => {
-        e.preventDefault()
-        if (input1R.value !== '' && input2R.value !== '') {
-            user = {
-                login: input1R.value,
-                pass: input2R.value
+    const getReg = () => {
+        if (inputFN.value !== '' || inputL.value !== '' || inputE.value !== '' || inputP.value !== '' || inputPR.value !== '') {
+            if (inputP.value == inputPR.value) {
+                if (checkbox == true) {
+                    id++
+                    user = {
+                        id: id,
+                        login: inputL.value,
+                        pass: inputP.value,
+                        fullname: inputFN.value,
+                        email: inputE.value
+                    }
+                    passArr.push(user)
+                    inputFN.value = ''
+                    inputE.value = ''
+                    inputL.value = ''
+                    inputP.value = ''
+                    inputPR.value = ''
+                    alert('Регистрация прошла успешно!')
+                } else {
+                    alert('Не поставленно соглашение')
+                    return
+                }
+            } else {
+                alert('Пароли не совпадают')
+                return
             }
-            passArr.push(user)
-            console.log(passArr)
-            divR.classList.remove('popup-reg')
-            input1R.value = ''
-            input2R.value = ''
         } else {
-            alert('Заполните оба поля')
+            alert('Должны быть заполненны все поля')
+            return
         }
-    })
+    }
+
+    // btnR.addEventListener('click', (e) => {
+    //     e.preventDefault()
+    //     divR.classList.add('popup-reg')
+    // })
+
+    // btnLogin.addEventListener('click', (e) => {
+    //     e.preventDefault()
+    //     if (input1.value !== '' && input2.value !== '') {
+    //         console.log(passArr);
+    //         user = {
+    //             login: input1.value,
+    //             pass: input2.value
+    //         }
+    //         passArr.forEach(elem => {
+    //             console.log(elem.login);
+    //           if (elem.login == user.login && elem.pass == user.pass) {
+    //               div.classList.remove('popup-reg')
+    //               input1.value = ''
+    //               input2.value = ''
+    //           } else {
+    //               return
+    //           }
+    //         })
+    //     }
+    // })
+
+    // btnRReg.addEventListener('click', (e) => {
+    //     e.preventDefault()
+    //     if (input1R.value !== '' && input2R.value !== '') {
+    //         user = {
+    //             login: input1R.value,
+    //             pass: input2R.value
+    //         }
+    //         passArr.push(user)
+    //         console.log(passArr)
+    //         divR.classList.remove('popup-reg')
+    //         input1R.value = ''
+    //         input2R.value = ''
+    //     } else {
+    //         alert('Заполните оба поля')
+    //     }
+    // })
 }
 
 export default login

@@ -381,7 +381,7 @@ body {
   padding-right: 10px;
   justify-content: center;
   align-items: center;
-  background: #322823;
+  background: #2f343a;
   color: #322823;
   z-index: 9999;
 }
@@ -529,13 +529,66 @@ body {
   border-bottom: 5px solid #C8A35F;
 }
 
+.popup-registr-items {
+  background-color: #393F47;
+  border-radius: 15px;
+  padding: 10px 10px;
+}
+
+.popup-registr-items__item-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.popup-registr-items__item-header-head {
+  font-size: 30px;
+  color: #C8A35F;
+}
+
+.popup-registr-items__item__form-info {
+  text-align: center;
+}
+
+.popup-registr-items__item__form-blockinput {
+  margin: 12px 0;
+}
+
+.popup-registr-items__item__form-input {
+  width: 300px;
+  height: 40px;
+  background-color: #C8A35F;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.popup-registr-items__item__form-checkbox {
+  height: 20px;
+  width: 20px;
+}
+
+.popup-registr-items__item__form-blockbtn {
+  text-align: center;
+  max-width: 205px;
+  margin: 0 auto;
+}
+
+.popup-registr-items__item__form-btn {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: black;
+}
+
 .callback {
   background-color: white;
-  width: 400px;
-  height: 500px;
+  width: 300px;
+  height: 400px;
   position: fixed;
-  top: 47%;
-  left: 78.5%;
+  top: 55.5%;
+  left: 84.3%;
 }
 
 .callback-items__item {
@@ -544,22 +597,22 @@ body {
 
 .callback-items__item-window {
   overflow-y: auto;
-  width: 400px;
-  height: 450px;
+  width: 300px;
+  height: 400px;
 }
 
 .callback-items__item-window-msg-user {
   float: right;
   clear: both;
   margin: 5px 2px;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .callback-items__item-window-msg-moder {
   float: left;
   clear: both;
   margin: 5px 2px;
-  max-width: 300px;
+  max-width: 200px;
 }
 
 .callback-items__item-window-text {
@@ -570,13 +623,15 @@ body {
 }
 
 .callback-items__item-input {
-  height: 45px;
-  width: 290px;
+  height: 30px;
+  width: 220px;
   float: left;
   clear: both;
 }
 
 .callback-items__item-btn {
-  height: 45px;
-  width: 110px;
+  height: 30px;
+  width: 80px;
+  font-size: 12px;
 }
+/*# sourceMappingURL=style.css.map */
