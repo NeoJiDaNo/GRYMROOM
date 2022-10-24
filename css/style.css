@@ -395,7 +395,7 @@ body {
   max-width: 120px;
 }
 
-#btn {
+.btn {
   background-color: #393F47;
   padding: 10px 10px;
   border-radius: 5px;
@@ -431,6 +431,18 @@ body {
 .header-items__item-reg {
   display: flex;
   justify-content: space-between;
+  width: 260px;
+}
+
+.header-items__item-reg-blockAva {
+  background-color: white;
+  padding: 8px 12px;
+  border-radius: 50%;
+}
+
+.header-items__item-reg-ava {
+  color: black;
+  font-size: 20px;
 }
 
 .hero {
@@ -580,6 +592,168 @@ body {
   margin: 0 10px;
   cursor: pointer;
   color: black;
+}
+
+.popup-login-items {
+  background-color: #393F47;
+  border-radius: 15px;
+  padding: 10px 10px;
+}
+
+.popup-login-items__item-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.popup-login-items__item-header-head {
+  font-size: 30px;
+  color: #C8A35F;
+}
+
+.popup-login-items__item__form-info {
+  text-align: center;
+}
+
+.popup-login-items__item__form-blockinput {
+  margin: 12px 0;
+}
+
+.popup-login-items__item__form-input {
+  width: 300px;
+  height: 40px;
+  background-color: #C8A35F;
+  border: none;
+  border-radius: 10px;
+  outline: none;
+}
+
+.popup-login-items__item__form-checkbox {
+  height: 20px;
+  width: 20px;
+}
+
+.popup-login-items__item__form-blockbtn {
+  text-align: center;
+  max-width: 205px;
+  margin: 0 auto;
+}
+
+.popup-login-items__item__form-btn {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.popup-zakaz-items {
+  background-color: #393F47;
+  border-radius: 15px;
+  padding: 25px 20px;
+}
+
+.popup-zakaz-items__item-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.popup-zakaz-items__item-header-head {
+  font-size: 30px;
+  color: #C8A35F;
+}
+
+.popup-zakaz-items__item-form-block {
+  margin: 15px 0;
+}
+
+.popup-zakaz-items__item-form-blockbtn {
+  text-align: center;
+  max-width: 205px;
+  margin: 0 auto;
+}
+
+.popup-zakaz-items__item-form-btn {
+  background-color: white;
+  padding: 10px 10px;
+  border-radius: 5px;
+  margin: 0 10px;
+  cursor: pointer;
+  color: black;
+}
+
+.popup-zakaz-items__item-form-input {
+  width: 300px;
+  height: 40px;
+  background-color: #C8A35F;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.popup-zakaz-items__item-form-select {
+  width: 300px;
+  height: 40px;
+  background-color: #C8A35F;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.popup-myzakaz {
+  overflow-y: auto;
+  display: inline-block;
+}
+
+.popup-myzakaz-items {
+  background-color: #393F47;
+  border-radius: 15px;
+  padding: 25px 20px;
+}
+
+.popup-myzakaz-items__item-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.popup-myzakaz-items__item-header-head {
+  color: #C8A35F;
+  font-size: 30px;
+}
+
+.popup-myzakaz-items__item-cards {
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.popup-myzakaz-items__item-block {
+  max-width: 350px;
+  background-color: #2F343A;
+  padding: 10px 10px;
+  border-radius: 10px;
+  text-align: center;
+  margin: 5px 0;
+}
+
+.popup-myzakaz-items__item-file {
+  max-width: 300px;
+  margin: 10px auto;
+}
+
+.popup-myzakaz-items__item-text {
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+.popup-myzakaz-items__item-nick {
+  color: #C8A35F;
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.popup-myzakaz-items__item-info {
+  font-size: 14px;
 }
 
 .callback {

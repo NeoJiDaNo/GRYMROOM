@@ -22,23 +22,23 @@
             <div class="header-items__item">
                 <div class="header-items__item-links">
                     <div class="header-items__item-links-link">
-                        <div class="header-items__item-links-link-text" id="btn">Заявка</div>
+                        <div class="header-items__item-links-link-text btn" id="btn">Заявка</div>
                     </div>
                     <div class="header-items__item-links-link">
-                        <div class="header-items__item-links-link-text" id="btn">Контакты</div>
+                        <div class="header-items__item-links-link-text btn" id="btn">Контакты</div>
                     </div>
                     <div class="header-items__item-links-link">
-                        <div class="header-items__item-links-link-text" id="btn">Контакты</div>
+                        <div class="header-items__item-links-link-text btn" id="btnZakaz">Заказать</div>
                     </div>
                     <div class="header-items__item-links-link">
-                        <div class="header-items__item-links-link-text" id="btn">Контакты</div>
+                        <div class="header-items__item-links-link-text btn" id="btn">Контакты</div>
                     </div>
                 </div>
             </div>
             <div class="header-items__item">
                 <div class="header-items__item-reg">
                     <div class="header-items__item-reg-blockLogin">
-                        <div class="header-items__item-reg-btnLogin" id="btn">Вход</div>
+                        <div class="header-items__item-reg-btnLogin btn">Вход</div>
                     </div>
                     <div class="header-items__item-reg-blockReg">
                         <div class="header-items__item-reg-btnReg" id="btnS">Регистрация</div>
@@ -99,29 +99,45 @@
                     </div>
                 </div>
                 <div class="request-items__item-footer">
-                    <h2 class="request-items__item-footer-text">Заявок выполнено: 111</h2>
+                    <h2 class="request-items__item-footer-text">Заказов выполнено: 111</h2>
                 </div>
             </div>
         </div>
     </section>
-    <section class="invite">
+    <div class="popup popup-zakaz">
         <div class="container">
-            <div class="invite-items">
-                <div class="invite-items__item">
-                    <div class="invite-items__item-header">
-                        <h2 class="invite-items__item-header-head">Подача заявок</h2>
+            <div class="popup-zakaz-items">
+                <div class="popup-zakaz-items__item">
+                    <div class="popup-zakaz-items__item-header">
+                        <h2 class="popup-zakaz-items__item-header-head">Сделать заказ</h2>
                     </div>
                 </div>
-                <div class="invite-items__item">
-                    <form action="" class="invite-items__item-form">
-                        <input type="text" class="invite-items__item-form-nickname">
-                        <input type="text" class="invite-items__item-form-work">
-                        <input type="file" name="img" class="invite-items__item-form-img">
-                    </form>
+                <div class="popup-zakaz-items__item">
+                    <div class="popup-zakaz-items__item-form">
+                        <div class="popup-zakaz-items__item-form-block">
+                            <input type="text" name="nick" id="nick" class="popup-zakaz-items__item-form-input" placeholder="Кличка питомца">
+                        </div>
+                        <div class="popup-zakaz-items__item-form-block">
+                            <input type="text" name="info" id="info" class="popup-zakaz-items__item-form-input" placeholder="Описание запрашиваемых работ">
+                        </div>
+                        <div class="popup-zakaz-items__item-form-block">
+                            <select name="type" id="type" class="popup-zakaz-items__item-form-select">
+                                <option value="Стрижка">Стрижка</option>
+                                <option value="Уход за шерстью">Уход за шерстью</option>
+                                <option value="Уход за когтями">Уход за когтями</option>
+                            </select>
+                        </div>
+                        <div class="popup-zakaz-items__item-form-block">
+                            <input type="file" name="file" id="file" class="popup-zakaz-items__item-form-file">
+                        </div>
+                        <div class="popup-zakaz-items__item-form-blockbtn">
+                            <div class="popup-zakaz-items__item-form-btn">Заказать услуги</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
     <div class="popup popup-registr">
         <div class="container">
             <div class="popup-registr-items">
@@ -154,6 +170,51 @@
                     </div>
                     <div class="popup-registr-items__item__form-blockbtn">
                         <div class="popup-registr-items__item__form-btn">Зарегистрироваться</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-login">
+        <div class="container">
+            <div class="popup-login-items">
+                <div class="popup-login-items__item">
+                    <div class="popup-login-items__item-header">
+                        <h2 class="popup-login-items__item-header-head">Вход</h2>
+                    </div>
+                </div>
+                <div class="popup-login-items__item__form">
+                    <div class="popup-login-items__item__form-info">
+                        <div class="popup-login-items__item__form-blockinput">
+                            <input type="text" name="login" id="loginl" class="popup-login-items__item__form-input" placeholder="логин">
+                        </div>
+                        <div class="popup-login-items__item__form-blockinput">
+                            <input type="text" name="pass" id="passl" class="popup-login-items__item__form-input" placeholder="пароль">
+                        </div>
+                    </div>
+                    <div class="popup-login-items__item__form-blockbtn">
+                        <div class="popup-login-items__item__form-btn">Войти</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="popup popup-myzakaz">
+        <div class="container">
+            <div class="popup-myzakaz-items">
+                <div class="popup-myzakaz-items__item">
+                    <div class="popup-myzakaz-items__item-header">
+                        <h2 class="popup-myzakaz-items__item-header-head">Мои заказы</h2>
+                    </div>
+                </div>
+                <div class="popup-myzakaz-items__item" id="blockMyzakaz">
+                    <div class="popup-myzakaz-items__item-cards">
+                        <div class="popup-myzakaz-items__item-block">
+                            <h2 class="popup-myzakaz-items__item-nick">tysh</h2>
+                            <img src="./img/human/25 2 (9).jpg" alt="a" class="popup-myzakaz-items__item-file">
+                            <p class="popup-myzakaz-items__item-text">Стрижка</p>
+                            <p class="popup-myzakaz-items__item-info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat voluptatem iure, voluptatibus dolores earum maxime deleniti molestias explicabo atque, illo beatae! Consequatur repellat temporibus accusantium, dicta repudiandae ad voluptatem fugit?</p>
+                        </div>
                     </div>
                 </div>
             </div>
